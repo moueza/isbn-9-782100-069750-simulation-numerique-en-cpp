@@ -1,4 +1,12 @@
 PROG=ClassABC
 CXXFLAGS= -g
 obj= CheckPtr.o $(PROG).o
-all:
+all: $(obj)
+  g++ $(obj) -o $(PROG)
+.cpp.o:
+  g++ -c $(CXXFLAGS) $<
+clean:
+  rm $(PROG) $(obj)
+                              
+
+                           
