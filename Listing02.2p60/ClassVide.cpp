@@ -34,7 +34,8 @@ Vide & fct1(Vide v)
 Vide & fct2(Vide &v)
 {return v;}
 
-void main()
+//void main()
+int main()
 {
   Vide a,b(a);
   cout<<"--------"<<endl;
@@ -53,5 +54,5 @@ void main()
   cout<<"c pointe vers l adress "<<c<<endl;
   cout<<"--------"<<endl;
 
-    
+  return 0;  
 }
