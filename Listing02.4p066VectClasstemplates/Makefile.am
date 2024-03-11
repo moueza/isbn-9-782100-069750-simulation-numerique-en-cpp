@@ -1,2 +1,2 @@
 bin_PROGRAMS = main
-main_SOURCES = ClassComplex.cpp
+main_SOURCES = ClassVect.cpp
