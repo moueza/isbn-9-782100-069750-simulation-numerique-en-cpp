@@ -12,7 +12,7 @@ class Vect
 public:
   int n;
   T *v;
-  void Affiche (char* Message) const;
+  void Affiche(char* Message) const;
 };
 
 Vect(int nn): n(nn), v(new T[n]) {assert (v || !n);}
@@ -26,7 +26,7 @@ T & operator[] (int i) {assert (v && i>=0 && i <n);return v[i];}
 };
 
 template <class T>
-Vect<T>::Vect (const Vect &w) :n (w.n), v(new T[n])
+Vect<T>::Vect(const Vect &w) :n (w.n), v(new T[n])
 {  (*this)=w; }
  
 template<class T> 
@@ -44,12 +44,11 @@ void Vect<T>::operator= (const Vect & a)
 }
     
 template <class T>
-void Vect<T>::Affiche (char* Message) const
+void Vect<T>::Affiche(char* Message) const
 {
   cout<<Message<<endl;
   for (int i=0;i<n;i++)
     cout<<"Element i="<<i<<"\t"<<v[i]<<endl;
-
 }
   
 template<class U>
