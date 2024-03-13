@@ -1,6 +1,6 @@
 // p060
 // parallel-visualization-of-scientific-data-using-blender
-
+//Emacs compile interactive
 #include <iostream>
 #include <cassert>
 using namespace std;
@@ -13,7 +13,7 @@ public:
   int n;
   T *v;
   void Affiche(char* Message) const;
-};
+
 
 Vect(int nn): n(nn), v(new T[n]) {assert (v || !n);}
 
