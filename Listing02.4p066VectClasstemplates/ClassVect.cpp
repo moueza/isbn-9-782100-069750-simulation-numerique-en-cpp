@@ -1,6 +1,8 @@
 // p060
 // parallel-visualization-of-scientific-data-using-blender
 //Emacs compile interactive
+//define https://forum.arduino.cc/t/que-signifie-expected-primary-expression-before-token/565630
+
 #include <iostream>
 #include <cassert>
 using namespace std;
@@ -26,8 +28,10 @@ T & operator[] (int i) {assert (v && i>=0 && i <n);return v[i];}
 };
 
 template <class T>
-Vect<T>::Vect(const Vect &w) :n (w.n), v(new T[n])
-{  (*this)=w; }
+Vect<T>::Vect(const Vect &w) :n(w.n), v(new T[n])
+{
+  (*this)=w;
+}
  
 template<class T> 
 void Vect<T>::operator= (const Vect & a)
@@ -55,7 +59,7 @@ template<class U>
 void InitVect(Vect<U> & v)
 {
   for (int i=0;i<v.n; i++)
-    v[i]= (U).i/v.n;//++++
+    v[i]=(U)i / v.n;//++++
 }
 
 
@@ -67,7 +71,7 @@ void main()
 {
   Vect<double> w(3);
 
-  Vect   u(3);//++++
+  VectR   u(3);//++++
   InitVect (w);  w.Affiche("--- vecteur w ---");
   u=w; u[0]=10;  u.Affiche("--- vecteur u ---");
   u.Affiche("---vecteur u ---");
