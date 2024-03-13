@@ -19,7 +19,7 @@ Vect(int nn): n(nn), v(new T[n]) {assert (v || !n);}
 
 Vect(const Vect & w);
    
-~Vect() {if (y) delete [] v;}
+~Vect() {if (v) delete [] v;}
 void      operator = (const Vect & a);
 
 T & operator[] (int i) {assert (v && i>=0 && i <n);return v[i];}
@@ -52,9 +52,13 @@ void Vect<T>::Affiche(char* Message) const
 }
   
 template<class U>
-void InitVect(Vect&U>) & v)
-for (int i=0;i<v.n; i++)
-  v[i]= (U)/v.n;
+void InitVect(Vect<U> & v)
+{
+  for (int i=0;i<v.n; i++)
+    v[i]= (U).i/v.n;//++++
+}
+
+
 typedef Vect<double> VectR;
 
 
