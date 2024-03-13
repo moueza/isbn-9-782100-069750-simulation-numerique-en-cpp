@@ -63,7 +63,7 @@ void main()
 {
   Vect<double> w(3);
 
-  VectR   u(3);
+  Vect   u(3);//++++
   InitVect (w);  w.Affiche("--- vecteur w ---");
   u=w; u[0]=10;  u.Affiche("--- vecteur u ---");
   u.Affiche("---vecteur u ---");
