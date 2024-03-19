@@ -32,7 +32,7 @@ class B: public A
 };
 
 
-void main()
+int main()
 { A a; a.Affiche();
   cout<<"---"<<endl;
   B b; b.Affiche();
