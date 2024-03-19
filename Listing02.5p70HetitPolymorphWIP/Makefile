@@ -101,7 +101,7 @@ CONFIG_CLEAN_FILES =
 CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
-am_main_OBJECTS = ClassVect.$(OBJEXT)
+am_main_OBJECTS = ClassAB.$(OBJEXT)
 main_OBJECTS = $(am_main_OBJECTS)
 main_LDADD = $(LDADD)
 AM_V_P = $(am__v_P_$(V))
@@ -119,7 +119,7 @@ am__v_at_1 =
 DEFAULT_INCLUDES = -I.
 depcomp = $(SHELL) $(top_srcdir)/depcomp
 am__maybe_remake_depfiles = depfiles
-am__depfiles_remade = ./$(DEPDIR)/ClassVect.Po
+am__depfiles_remade = ./$(DEPDIR)/ClassAB.Po
 am__mv = mv -f
 CXXCOMPILE = $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) \
 	$(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS)
@@ -197,7 +197,7 @@ CXX = g++
 CXXDEPMODE = depmode=gcc3
 CXXFLAGS = -g -O2
 CYGPATH_W = echo
-DEFS = -DPACKAGE_NAME=\"classComplex\" -DPACKAGE_TARNAME=\"classcomplex\" -DPACKAGE_VERSION=\"0.0.1\" -DPACKAGE_STRING=\"classComplex\ 0.0.1\" -DPACKAGE_BUGREPORT=\"moueza.pb@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"main\" -DVERSION=\"0.0.1\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE__BOOL=1
+DEFS = -DPACKAGE_NAME=\"classAB\" -DPACKAGE_TARNAME=\"classab\" -DPACKAGE_VERSION=\"0.0.1\" -DPACKAGE_STRING=\"classAB\ 0.0.1\" -DPACKAGE_BUGREPORT=\"moueza.pb@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"main\" -DVERSION=\"0.0.1\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE__BOOL=1
 DEPDIR = .deps
 ECHO_C = 
 ECHO_N = -n
@@ -218,9 +218,9 @@ MKDIR_P = /usr/bin/mkdir -p
 OBJEXT = o
 PACKAGE = main
 PACKAGE_BUGREPORT = moueza.pb@gmail.com
-PACKAGE_NAME = classComplex
-PACKAGE_STRING = classComplex 0.0.1
-PACKAGE_TARNAME = classcomplex
+PACKAGE_NAME = classAB
+PACKAGE_STRING = classAB 0.0.1
+PACKAGE_TARNAME = classab
 PACKAGE_URL = 
 PACKAGE_VERSION = 0.0.1
 PATH_SEPARATOR = :
@@ -272,7 +272,7 @@ target_alias =
 top_build_prefix = 
 top_builddir = .
 top_srcdir = .
-main_SOURCES = ClassVect.cpp
+main_SOURCES = ClassAB.cpp
 all: all-am
 
 .SUFFIXES:
@@ -363,7 +363,7 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
-include ./$(DEPDIR)/ClassVect.Po # am--include-marker
+include ./$(DEPDIR)/ClassAB.Po # am--include-marker
 
 $(am__depfiles_remade):
 	@$(MKDIR_P) $(@D)
@@ -658,7 +658,7 @@ clean-am: clean-binPROGRAMS clean-generic mostlyclean-am
 
 distclean: distclean-am
 	-rm -f $(am__CONFIG_DISTCLEAN_FILES)
-		-rm -f ./$(DEPDIR)/ClassVect.Po
+		-rm -f ./$(DEPDIR)/ClassAB.Po
 	-rm -f Makefile
 distclean-am: clean-am distclean-compile distclean-generic \
 	distclean-tags
@@ -706,7 +706,7 @@ installcheck-am:
 maintainer-clean: maintainer-clean-am
 	-rm -f $(am__CONFIG_DISTCLEAN_FILES)
 	-rm -rf $(top_srcdir)/autom4te.cache
-		-rm -f ./$(DEPDIR)/ClassVect.Po
+		-rm -f ./$(DEPDIR)/ClassAB.Po
 	-rm -f Makefile
 maintainer-clean-am: distclean-am maintainer-clean-generic
 

@@ -2,11 +2,11 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.69])
-AC_INIT(classComplex,0.0.1, moueza.pb@gmail.com)
+AC_INIT(classAB,0.0.1, moueza.pb@gmail.com)
 
 AM_INIT_AUTOMAKE(main,0.0.1)
 
-AC_CONFIG_SRCDIR([ClassVect.cpp])
+AC_CONFIG_SRCDIR([ClassAB.cpp])
 #AC_CONFIG_HEADERS([config.h])
 
 # Checks for programs.

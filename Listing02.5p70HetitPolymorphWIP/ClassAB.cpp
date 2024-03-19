@@ -3,13 +3,13 @@
 //Emacs compile interactive
 
 #include<iostream> 
-using namespace std
+using namespace std;
 
 class A
 {public:
   int i;
 
-  A(int n=0): i(n).
+  A(int n=0): i(n)
   {cout<<"constr A adresse "<<this<<endl; }
 
   ~A() { cout <<" destr A adresse "<<this<<endl; }
@@ -19,16 +19,16 @@ class A
 
 
 
-class B public A
+class B: public A
 {public:
 
   int j;
   B(int n=0, int m=0): A(n), j(m)
-    { cout <<"constr B - adresse "<<this<<endl; }
+  { cout <<"constr B - adresse "<<this<<endl; }
 
-  ~B() { cout <<<" destr B adresse "<<this<<endl; }
+  ~B() { cout <<" destr B adresse "<<this<<endl; }
 
-  void Affiche () {A::Affiche(); cout<<"j="<<j<<endl; }
+  void Affiche() {A::Affiche(); cout<<"j="<<j<<endl; }
 };
 
 
